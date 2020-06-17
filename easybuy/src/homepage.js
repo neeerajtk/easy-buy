@@ -43,5 +43,5 @@ const HomePage = () =>(
     </div>
 )
 
-export default Homepage;
+export default HomePage;
 
