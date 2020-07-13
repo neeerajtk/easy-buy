@@ -1,2 +1,2 @@
 # easy-buy
-Shopping application that helps local merchants publish their goods online.
+Shopping application that helps local merchants sell their goods online.
