@@ -13,19 +13,19 @@ class Directory extends React.Component {
                   title: 'Home & Living',
                   imageUrl: 'https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
                   id: 1,
-                  linkUrl: 'shop/hats'
+                  linkUrl: 'shop/home'
                 },
                 {
                   title: 'Electronics',
                   imageUrl: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80',
                   id: 2,
-                  linkUrl: 'shop/jackets'
+                  linkUrl: 'shop/electronics'
                 },
                 {
                   title: 'Automotive',
                   imageUrl: 'https://images.unsplash.com/photo-1539799139339-50c5fe1e2b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80.png',
                   id: 3,
-                  linkUrl: 'shop/sneakers'
+                  linkUrl: 'shop/automotive'
                 },
                 {
                   title: 'womens Wear',
@@ -48,8 +48,8 @@ render(){
     return (
         <div className="directory-menu">
             {
-            this.state.sections.map(({title, imageUrl, id, size}) => (
-                <MenuItem  key={id} title={title} imageUrl={imageUrl} size={size} />
+            this.state.sections.map(({title, imageUrl, id, size, linkUrl}) => (
+                <MenuItem  key={id} title={title} imageUrl={imageUrl} size={size} linkUrl={linkUrl} />
             ))}
         </div>
     )}
