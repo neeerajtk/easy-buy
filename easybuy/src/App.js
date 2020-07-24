@@ -6,11 +6,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage';
 import ShopPage from './pages/shop/shop';
 
-const HomesPage = () => (
-  <div>
-    <h1>HOME / LIVING</h1>
-  </div>
-)
+
 
 function App() {
   return (
@@ -18,7 +14,6 @@ function App() {
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/shop' component={ShopPage} />
-        <Route exact path='/shop/home' component={HomesPage} />
       </Switch>
     </div>
   );
