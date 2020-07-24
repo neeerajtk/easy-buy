@@ -12,7 +12,7 @@ class ShopPage extends Component {
     render() {
         return (
             <div>
-                
+                SHOP PAGE
             </div>
         )
     }
