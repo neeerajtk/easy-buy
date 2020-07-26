@@ -5,7 +5,7 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage';
 import ShopPage from './pages/shop/shop';
-import SignInAndSignUpPage from './pages/sign-in/sign-in';
+import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up';
 import Header from './components/header/header';
 
 
