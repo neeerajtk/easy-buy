@@ -1,0 +1,16 @@
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+const config = {
+    apiKey: "AIzaSyDFifOjJYXQiSsELKSSuuJU-WeSVno_0sU",
+    authDomain: "easybuy-db.firebaseapp.com",
+    databaseURL: "https://easybuy-db.firebaseio.com",
+    projectId: "easybuy-db",
+    storageBucket: "easybuy-db.appspot.com",
+    messagingSenderId: "284844978251",
+    appId: "1:284844978251:web:58b09502ae5dc19f1b1dce",
+    measurementId: "G-F1P87NPXPL"
+  };
+
+  firebase.initializeApp(config);
