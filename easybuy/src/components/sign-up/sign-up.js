@@ -18,6 +18,25 @@ class SignUp extends React.Component{
             confirmPassword: ''
         }
     }
+
+    handleSubmit = async event => {
+        event.preventDefault();
+        const {displayName, email, password, confirmPassword} = this.state;
+        if(password != confirmPassword){
+            alert("Password Mismatch !")
+            return;
+        }
+        try{
+            const {user} = await auth.createUserWithEmailAndPassword(email, password);
+            createUserProfileDocument(user, displayName);
+
+        }catch(error){
+            console.log(error);
+            
+        }
+    }
+
+
     render(){
         const {displayName, email, password, confirmPassword} = this.state;
         return(
@@ -49,9 +68,12 @@ class SignUp extends React.Component{
                     onChange={this.handleChange}
                     label='Confirm Password'
                     require/>
+                    <CustomButton type="submit">Sign Up</CustomButton>
                    
                 </form>
             </div>
         )
     }
 }
+
+export default SignUp;
