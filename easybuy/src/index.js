@@ -9,9 +9,9 @@ import App from './App';
 
 ReactDOM.render(
   <Provider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
   </Provider>,
   document.getElementById('root')
 );
