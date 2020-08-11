@@ -6,8 +6,9 @@ const StripeCheckoutButton = ({price}) => {
     const priceForStripe = price;
     const publushableKey = 'pk_test_51HEpmvFFRLfWNL6k0IVCSYqp9uhe08RciGndjo3bYiWVUwZWPXOW8XLzYdwbkYQwN7YVFMOuQzigY9FoUYSKAMNE00Eftkb2Zz';
 
-    onToken = token => {
+    const onToken = token => {
         console.log(token);
+        alert('Thanks, Order has been placed successfully ! ');
         
     }
 
@@ -18,11 +19,13 @@ const StripeCheckoutButton = ({price}) => {
             name='Rangeela Ind'
             billingAddress
             shippingAddress
-            image='https://svgshare.com/i/CUz.svg'
+            // image='https://svgshare.com/i/CUz.svg'
             description={`Your total is ₹ ${price}`}
             amount={priceForStripe}
             panelLabel='Pay Now'
-            token={}
+            token={onToken}
+            stripeKey={publushableKey}
         />
-    )
-}
+    );
+};
+export default StripeCheckoutButton; 
